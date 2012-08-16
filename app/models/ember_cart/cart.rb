@@ -63,7 +63,7 @@ module EmberCart
     public
     class << self
       def of(shopper)
-        Cart.where(shopper: shopper)
+        Cart.where(shopper_id: shopper.id)
       end
     end
   end
