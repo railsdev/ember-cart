@@ -1,5 +1,5 @@
 <div class="ec-cart-name" {{action "toggleCartItems"}}>
-  {{view.cart.name}} ({{view.cart.cartItemsCount}})
+  Total Item ({{view.cart.cartItemsCount}})
 </div>
 {{#unless view.isCartItemsHidden}}
   {{view EmberCart.MiniCartItemList cartItemsBinding="view.cart.cart_items"}}

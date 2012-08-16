@@ -16,7 +16,12 @@
   <dd>
     {{#each view.cartItem.children }}
       <ul class='ec-cart-item-child'>
-        <li class="ec-cart-item-name">{{ name }}</li>
+        <li class="ec-cart-item-name">
+          <div>
+            <div class="pull-left"><img src="{{ image }}"/></div>
+            <div class="pull-right">{{ name }}</div>
+          </div>
+        </li>
         <li class="ec-cart-item-others">
           <div class="ec-cart-item-price ec-money">
             {{t currency.unit}}{{ formattedPrice }}x{{ quantity }}
