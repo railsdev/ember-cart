@@ -4,6 +4,7 @@
 {{#unless view.isCartItemsHidden}}
   {{view EmberCart.MiniCartItemList cartItemsBinding="view.cart.cart_items"}}
 {{/unless}}
+<br/>
 <div class="ec-bottom-bar">
   <span>
     {{t cart.total}} <span class="ec-money">{{t currency.unit}}{{view.cart.total}}</span>
