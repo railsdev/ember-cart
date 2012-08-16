@@ -15,7 +15,7 @@ module EmberCart
 
     attr_accessor :current
 
-    attr_accessible :name, :shopper
+    attr_accessible :name, :shopper, :image_url
 
     def total
       cart_items.roots.map.sum(&:total) || 0
@@ -54,6 +54,7 @@ module EmberCart
         price: opts[:price] || cartable.cartable_price,
         base_quantity: opts[:base_quantity],
         quantity: opts[:quantity] || 1,
+	image_url: opts[:image_url],
         group: opts[:group],
         parent_id: opts[:parent_id],
         children_attributes: children_attrs
