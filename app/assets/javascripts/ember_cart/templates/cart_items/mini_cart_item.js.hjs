@@ -3,7 +3,7 @@
     <li class="ec-cart-item-name" {{ action "toggleChildren" }}>
       <div>
         <div class="pull-left">
-          <img height="32" width="32" {{ bindAttr src="view.cartItem.image" }} />
+          <img height="32" width="32" {{ bindAttr src="view.cartItem.image_url" }} />
         </div>
         <div class="pull-right">
           {{ view.cartItem.name }}
