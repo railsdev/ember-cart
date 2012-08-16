@@ -21,8 +21,5 @@ window.EmberCart = Ember.Application.create
     #locale = 'locales.' + defaultLocale
     Ember.I18n.translations = EmberCart.locales[defaultLocale]
 
-EmberCart.ImgView = Em.View.extend({
-    tagName: 'img'
-});
-
+    
 EmberCart.initialize()
