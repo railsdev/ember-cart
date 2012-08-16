@@ -3,7 +3,7 @@
     <li class="ec-cart-item-name" {{ action "toggleChildren" }}>
       <div>
         <div class="pull-left">
-          {{ view.cartItem.image}}
+          <img src='{{ view.cartItem.image}}' />
         </div>
         <div class="pull-right"
           {{ view.cartItem.name }}
