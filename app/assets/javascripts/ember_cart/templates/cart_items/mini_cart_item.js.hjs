@@ -1,6 +1,15 @@
 <dt>
   <ul>
-    <li class="ec-cart-item-name" {{ action "toggleChildren" }}>{{ view.cartItem.name }}</li>
+    <li class="ec-cart-item-name" {{ action "toggleChildren" }}>
+      <div>
+        <div class="pull-left">
+          {{ view.cartItem.image}}
+        </div>
+        <div class="pull-right"
+          {{ view.cartItem.name }}
+        </div>
+      </div>
+    </li>
     <li class="ec-cart-item-others">
       <div class="ec-cart-item-price ec-money">
         {{t currency.unit}}{{ view.cartItem.formattedPrice }}x{{ view.cartItem.quantity }}
