@@ -9,5 +9,5 @@
   <span>
     {{t cart.total}} <span class="ec-money">{{t currency.unit}}{{view.cart.total}}</span>
   </span>
-  <span><a href="#">{{t links.checkout}}</a></span>
+  <span><a href="#" class="checkout">{{t links.checkout}}</a></span>
 </div>
